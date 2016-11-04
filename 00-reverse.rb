@@ -6,6 +6,14 @@
 # Difficulty: easy.
 
 def reverse(string)
+  string = string.chars
+  reverse_string = []
+
+  until string === [] do
+    reverse_string << string.pop
+  end
+  
+  reverse_string.join
 end
 
 # These are tests to check that your code is working. After writing
