@@ -4,10 +4,16 @@
 # Difficulty: easy.
 
 def time_conversion(minutes)
-  if minutes < 60
-    return "0:#{minutes}"
+  hours = 0
+  while minutes >= 60
+    hours += 1
+    minutes -= 60
   end
-  
+
+  if minutes < 10
+    return "#{hours}:0#{minutes}"
+  else
+    return "#{hours}:#{minutes}"
   end
 end
 
