@@ -6,6 +6,21 @@
 # Difficulty: easy.
 
 def palindrome?(string)
+  stringarray = string.chars
+  stringcopy = []
+
+  (0..stringarray.length).each do |i|
+    stringcopy << stringarray.pop
+  end
+
+  stringcopy = stringcopy.join
+
+  if string == stringcopy
+    return true
+  else
+    return false
+  end
+
 end
 
 # These are tests to check that your code is working. After writing
@@ -14,3 +29,4 @@ end
 puts('palindrome?("abc") == false: ' + (palindrome?('abc') == false).to_s)
 puts('palindrome?("abcba") == true: ' + (palindrome?('abcba') == true).to_s)
 puts('palindrome?("z") == true: ' + (palindrome?('z') == true).to_s)
+

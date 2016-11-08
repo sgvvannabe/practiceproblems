@@ -5,6 +5,17 @@
 # Difficulty: easy.
 
 def count_vowels(string)
+  string = string.chars
+  counter = 0
+
+  string.each do |i|
+    if i == "a" || i == "e" || i == "i" || i == "o" || i == "u"
+      counter += 1
+    end
+  end
+
+  return counter
+
 end
 
 # These are tests to check that your code is working. After writing
