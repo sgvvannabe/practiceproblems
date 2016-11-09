@@ -5,6 +5,25 @@
 # Difficulty: medium.
 
 def nearby_az(string)
+  string = string.chars
+
+  if string.include?('a') == true
+    a_location = string.index('a')
+
+    until a_location > (string.index('a') + 3) do
+      if string[a_location] == 'z'
+        return true
+      elsif string[a_location].nil? == true
+        return false
+      else
+        a_location += 1
+      end    
+    end
+      
+  else
+    return false
+  end
+
 end
 
 # These are tests to check that your code is working. After writing
