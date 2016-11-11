@@ -5,6 +5,22 @@
 # Difficulty: medium.
 
 def two_sum(nums)
+  answer = []
+
+  nums.each do |x| 
+    nums.each do |y|      
+      if x + y == 0cd
+         answer << nums.index(x)
+         answer << nums.index(y)
+         
+      else
+        return nil
+      end
+
+    end  
+
+  end
+
 end
 
 # These are tests to check that your code is working. After writing
