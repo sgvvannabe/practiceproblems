@@ -9,7 +9,7 @@ def two_sum(nums)
 
   nums.each do |x| 
     nums.each do |y|      
-      if x + y == 0cd
+      if x + y == 0
          answer << nums.index(x)
          answer << nums.index(y)
          
