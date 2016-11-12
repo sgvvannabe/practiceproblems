@@ -5,6 +5,10 @@
 # Difficulty: medium.
 
 def third_greatest(nums)
+	nums_length = nums.length
+	nums.sort!
+
+	return nums[nums.length - 3]
 end
 
 # These are tests to check that your code is working. After writing
